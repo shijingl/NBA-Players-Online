@@ -4,9 +4,15 @@ This project is the Linux Server Configuration Project. In this project, I have 
 
 ### **Basic Information**
 
-1. IP address: http://35.153.171.25
+1. IP address: 
+```
+http://35.153.171.25
+```
 2. SSH port: 2200
-3. A complete URL: http://ec2-35-153-171-25.compute-1.amazonaws.com
+3. A complete URL: 
+```
+http://ec2-35-153-171-25.compute-1.amazonaws.com
+```
 4. Grader passphrase: grader123
 
 ### **Software to Install During the Configuration**
@@ -28,12 +34,14 @@ This project is the Linux Server Configuration Project. In this project, I have 
 ### **Check Points**
 1. Check Login as “Ubuntu” and Check Port 2200: 
 In your local machine in Git Bash, please do: 
+```
 ssh -i ~/.ssh/LightsailDefaultKey.rsa ubuntu@35.153.171.25 -p 2200
-
+```
 2. Check Port 22 Does NOT work:
 In your local machine in Git Bash, please do: 
+```
 ssh -i ~/.ssh/LightsailDefaultKey.rsa ubuntu@35.153.171.25 -p 22
-
+```
 3. Check Login as “root” Does NOT work: 
 In your local machine in Git Bash, please do: 
 ssh -i ~/.ssh/LightsailDefaultKey.rsa root@35.153.171.25 -p 22
