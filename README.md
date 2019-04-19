@@ -86,14 +86,18 @@ date
 After you login in as “grader”, please do: 
 ```
 cd /etc/apache2/sites-available
+```
 Then you can open the catalog.conf:
+```
 sudo nano catalog.conf 
 ```
 12. Check WSGI settings
 After login as “grader”, please do:
 ```
 cd /var/www/catalog
+```
 Then you can open the catalog.wsgi setting:
+```
 sudo nano catalog.wsgi
 ```
 13. Check Apache2 status: 
@@ -105,22 +109,48 @@ sudo service apache2 status
 After you login, please switch user: 
 ```
 sudo  su – postgres
-Then open PostgreSQL by typing: psql
-Listing the existing roles by typing: \du
-Exit psql: \q
-Switch back to the grader user: exit
+```
+Then open PostgreSQL by typing: 
+```
+psql
+```
+Listing the existing roles by typing:
+```
+\du
+```
+Exit psql:
+```
+\q
+```
+Switch back to the grader user: 
+```
+exit
 ```
 15. Check Database can store data: 
 Switch user to catalog:
 ```
 Sudo su – catalog
-Then type in: psql
-Listing all the tables: \d
+```
+Then type in: 
+```
+psql
+```
+Listing all the tables: 
+```
+\d
+```
 Check the data in each table: 
+```
 Select * from category; 
 Select * from category_item;
-Exit psql: \q
-Exit catalog: exit
+```
+Exit psql: 
+```
+\q
+```
+Exit catalog: 
+```
+exit
 ```
 16. Check data can be saved to database:
 After login, please temporarily stop apache2:
