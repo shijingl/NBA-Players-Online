@@ -44,12 +44,15 @@ ssh -i ~/.ssh/LightsailDefaultKey.rsa ubuntu@35.153.171.25 -p 22
 ```
 3. Check Login as “root” Does NOT work: 
 In your local machine in Git Bash, please do: 
+```
 ssh -i ~/.ssh/LightsailDefaultKey.rsa root@35.153.171.25 -p 22
+```
 You can also check the sshd_config file: 
+```
 cd /etc/ssh
 sudo nano sshd_config
 PermitRootLogin is set to “no”
-
+```
 4. Check Login as “Grader”:
 In your local machine in Git Bash, please do:
 ssh -i ~/.ssh/grader_key -p 2200 grader@35.153.171.25
