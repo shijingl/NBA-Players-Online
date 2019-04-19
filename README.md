@@ -55,44 +55,52 @@ PermitRootLogin is set to “no”
 ```
 4. Check Login as “Grader”:
 In your local machine in Git Bash, please do:
+```
 ssh -i ~/.ssh/grader_key -p 2200 grader@35.153.171.25
 grader_key is the key you have moved in ~/.ssh folder in the preparation step.
 Then type in grader passphrase: grader123
-
+```
 5. Check Grader has Sudo Access:
 After you login as “grader”, please do: 
+```
 sudo -l
-
+```
 6. Check All the Packages Have Been Updated:
 After you login as “grader”, please do: 
+```
 sudo apt-get update
 sudo apt-get upgrade
-
+```
 7. Check Uncomplicated Firewall (UFW): 
 After you login as “grader”, please do: 
+```
 sudo ufw status
 Type in grader password: grader123
-
+```
 10. Check Local Timezone to UTC: 
 After you login as “grader”, please do:
+```
 date
-
+```
 11. Check the Virtual Host settings (and Port 80 used for web server)
 After you login in as “grader”, please do: 
+```
 cd /etc/apache2/sites-available
 Then you can open the catalog.conf:
 sudo nano catalog.conf 
-
+```
 12. Check WSGI settings
 After login as “grader”, please do:
+```
 cd /var/www/catalog
 Then you can open the catalog.wsgi setting:
 sudo nano catalog.wsgi
-
+```
 13. Check Apache2 status: 
 After you login as “grader”, please do: 
+```
 sudo service apache2 status
-
+```
 14. Check PostgresSQL data setup:
 After you login, please switch user: 
 sudo  su – postgres
