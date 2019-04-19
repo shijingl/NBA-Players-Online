@@ -2,14 +2,14 @@
 **Project Description**
 This project is the Linux Server Configuration Project. In this project, I have deployed my “NBA Players” application through AWS Lightsail.
 
-**Basic Information**
+### **Basic Information**
 
 1. IP address: http://35.153.171.25
 2. SSH port: 2200
 3. A complete URL: http://ec2-35-153-171-25.compute-1.amazonaws.com
 4. Grader passphrase: grader123
 
-**Software to Install During the Configuration**
+### **Software to Install During the Configuration**
 
 1. apache2
 2. mod_wsgi
@@ -25,7 +25,7 @@ This project is the Linux Server Configuration Project. In this project, I have 
 12. libpq-dev
 13. Psycopg2
 
-**Check Points**
+### **Check Points**
 1. Check Login as “Ubuntu” and Check Port 2200: 
 In your local machine in Git Bash, please do: 
 ssh -i ~/.ssh/LightsailDefaultKey.rsa ubuntu@35.153.171.25 -p 2200
@@ -116,7 +116,7 @@ Finally restart the apache2:
 sudo service apache2 restart
 
 
-**Special note:**
+### **Special note:**
 Google authorization works only with the top-level domains. http://35.153.171.25
 and http://ec2-35-153-171-25.compute-1.amazonaws.com are not top-level domains. So I cannot let google login works in my user interface. 
 I followed the instruction from this threads in the Udacity discussion forum: 
