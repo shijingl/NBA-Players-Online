@@ -25,7 +25,7 @@ This project is the Linux Server Configuration Project. In this project, I have 
 12. libpq-dev
 13. Psycopg2
 
-** Check Points **
+**Check Points**
 1. Check Login as “Ubuntu” and Check Port 2200: 
 In your local machine in Git Bash, please do: 
 ssh -i ~/.ssh/LightsailDefaultKey.rsa ubuntu@35.153.171.25 -p 2200
