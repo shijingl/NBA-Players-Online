@@ -103,14 +103,16 @@ sudo service apache2 status
 ```
 14. Check PostgresSQL data setup:
 After you login, please switch user: 
+```
 sudo  su – postgres
 Then open PostgreSQL by typing: psql
 Listing the existing roles by typing: \du
 Exit psql: \q
 Switch back to the grader user: exit
-
+```
 15. Check Database can store data: 
 Switch user to catalog:
+```
 Sudo su – catalog
 Then type in: psql
 Listing all the tables: \d
@@ -119,9 +121,10 @@ Select * from category;
 Select * from category_item;
 Exit psql: \q
 Exit catalog: exit
-
+```
 16. Check data can be saved to database:
 After login, please temporarily stop apache2:
+```
 sudo service apache2 stop
 Then please change directory:
 cd /var/www/catalog/catalog
@@ -133,7 +136,7 @@ python players.py
 Here you can see data is saved in database
 Finally restart the apache2: 
 sudo service apache2 restart
-
+```
 
 ### **Special note:**
 Google authorization works only with the top-level domains. http://35.153.171.25
