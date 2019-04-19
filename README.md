@@ -57,8 +57,11 @@ PermitRootLogin is set to “no”
 In your local machine in Git Bash, please do:
 ```
 ssh -i ~/.ssh/grader_key -p 2200 grader@35.153.171.25
+```
 grader_key is the key you have moved in ~/.ssh folder in the preparation step.
-Then type in grader passphrase: grader123
+Then type in grader passphrase: 
+```
+grader123
 ```
 5. Check Grader has Sudo Access:
 After you login as “grader”, please do: 
@@ -156,15 +159,23 @@ exit
 After login, please temporarily stop apache2:
 ```
 sudo service apache2 stop
+```
 Then please change directory:
+```
 cd /var/www/catalog/catalog
+```
 Then go to virtual machine:
+```
 . venv/bin/activate
+```
 Then book data: 
+```
 python database_setup.py
 python players.py
+```
 Here you can see data is saved in database
 Finally restart the apache2: 
+```
 sudo service apache2 restart
 ```
 
