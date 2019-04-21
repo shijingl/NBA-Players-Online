@@ -5,9 +5,7 @@ This project is the Linux Server Configuration Project. In this project, I have 
 ### **Basic Information**
 
 1. IP address: 
-```
 [http://35.153.171.25](http://35.153.171.25)
-```
 2. SSH port: 2200
 3. A complete URL: 
 ```
