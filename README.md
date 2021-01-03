@@ -1,7 +1,7 @@
 ## NBA-Players-Online
 **Project Description**
 
-This project is the Linux Server Configuration Project. In this project, I have deployed my [NBA Players Web Application](https://github.com/shijingl/NBA-Players) through AWS Lightsail.
+This project is the Linux Server Configuration Project. In this project, I have deployed my [NBA Players Web Application](https://github.com/shijingl/NBA-Players) through AWS Lightsail. The aws lightsai instance http://35.153.171.25 is already terminated on 01/03/2021 for saving cost. 
 
 ### **Basic Information**
 
